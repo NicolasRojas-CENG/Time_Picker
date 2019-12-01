@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/colorPrimary">
+
+    <Button
+        android:id="@+id/Test2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="214dp"
+        android:layout_marginBottom="239dp"
+        android:text="@string/go_to_test_2"
+        android:textAllCaps="false"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Time"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="182dp"
+        android:layout_marginBottom="82dp"
+        android:text="@string/time_picker_test_1"
+        android:textAllCaps="false"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/Time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Button"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="207dp"
+        android:layout_marginBottom="123dp"
+        android:text="@string/time_selected"
+        android:textAllCaps="false"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Test2"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="216dp"
+        android:layout_marginBottom="54dp"
+        android:text="@string/time_picker"
+        android:textAllCaps="false"
+        android:textSize="30sp" />
+
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Time Picker</string>
+    <string name="time_selected">Time Selected</string>
+    <string name="time_picker">Time Picker</string>
+    <string name="time_picker_test_1">Time Picker Test 1</string>
+    <string name="go_to_test_2">Go to Test 2</string>
+    <string name="go_to_test_1">Go to Test 1</string>
+    <string name="time_is">Time Is ::</string>
+    <string name="set_the_time_hh_mm">Set the Time HH:MM</string>
+</resources>
