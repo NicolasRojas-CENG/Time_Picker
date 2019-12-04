@@ -1,4 +1,4 @@
-## Time_Picker##
+## Time_Picker
 This is a example app on two ways to implement a timepicker in your app
 
 In android, TimePicker is a widget for selecting the time of day, in either 24-hour or AM/PM mode. 
