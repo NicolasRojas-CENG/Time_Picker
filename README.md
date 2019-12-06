@@ -66,3 +66,5 @@ Please follow the TODO comments, this will show you step by step on how to set u
 * [Tutlane](https://www.tutlane.com/tutorial/android/android-timepicker-with-examples)
 * [Abhiandroid.com](https://abhiandroid.com/ui/timepicker)
 * [Android Developer](https://developer.android.com/reference/android/widget/TimePicker)
+
+![PCB_BOTTOM](https://github.com/NicolasRojas-CENG/Time_Picker/blob/master/Images/ClockBefore.png?raw=true)
