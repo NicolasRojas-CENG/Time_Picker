@@ -11,6 +11,8 @@ import androidx.fragment.app.DialogFragment;
 
 import java.util.Calendar;
 
+/*TODO 1.4 This code handles the actual TimePicker. This code takes the time you set in the TimePicker.
+* We are using Calander to get the time we need, in this case hours and minutes.*/
 public class Time extends DialogFragment {
     @NonNull
     @Override

@@ -20,6 +20,8 @@ public class MainActivity extends AppCompatActivity implements TimePickerDialog.
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        /*TODO 1.2 This is the set up for the button that opens the TimePicker.
+        * Use the IDs set up in the Layout file from 1.1*/
         Button button = findViewById(R.id.Button);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -29,6 +31,7 @@ public class MainActivity extends AppCompatActivity implements TimePickerDialog.
             }
         });
 
+        //this is the set up to go to the next activity, where the sinner mode can be found.
         Button test2Button = findViewById(R.id.Test2);
         test2Button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -40,13 +43,14 @@ public class MainActivity extends AppCompatActivity implements TimePickerDialog.
         });
 
     }
-
+    /*TODO 1.3 This code is set the time you choose to the TextView mentioned in the layout file.
+    * Be sure you are using the correct ID for the TextView.*/
     @Override
     public void onTimeSet(TimePicker view, int hourOfDay, int minute) {
         TextView textView = findViewById(R.id.Time);
         textView.setText(hourOfDay + " : " + minute);
     }
-
+    //This is code to handle the start of the the new activity.
     public static Intent makeIntent(Context context){
         return new Intent(context, MainActivity.class);
     }

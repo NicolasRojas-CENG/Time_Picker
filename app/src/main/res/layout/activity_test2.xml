@@ -7,6 +7,11 @@
     tools:context=".Test2"
     android:background="#950">
 
+    <!--TODO 2.1 This is for the Spinner mode of the TimePicker.
+    Set up the attributes of the TimePicker, review the Attributes section
+    of the README file in gethub.
+    Remember to set a meaningful id for the TimePicker. It will be used later.-->
+
     <TimePicker
         android:id="@+id/simpleTimePicker"
         android:layout_width="wrap_content"
@@ -19,6 +24,9 @@
         app:layout_constraintBottom_toTopOf="@+id/Test1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- TODO 2.2 Then set up the TextView where the time will be shown.
+    Remember to setup a meaningful id for the TextView, it will be used later.-->
 
     <TextView
         android:id="@+id/time"

@@ -13,8 +13,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="214dp"
-        android:layout_marginBottom="239dp"
+        android:layout_marginEnd="129dp"
+        android:layout_marginBottom="165dp"
         android:text="@string/go_to_test_2"
         android:textAllCaps="false"
         android:textSize="30sp" />
@@ -25,11 +25,17 @@
         android:layout_height="wrap_content"
         android:layout_above="@+id/Time"
         android:layout_alignParentEnd="true"
-        android:layout_marginEnd="182dp"
-        android:layout_marginBottom="82dp"
+        android:layout_marginEnd="90dp"
+        android:layout_marginBottom="65dp"
         android:text="@string/time_picker_test_1"
         android:textAllCaps="false"
         android:textSize="30sp" />
+
+    <!--TODO 1.1 This is for the Clock mode of the TimePicker.
+Add a TextView, were the date will be shown,
+ and a Button, to open the TimePiker
+ Be sure to use meaningful IDs for both components, they will be used
+ in the java code.-->
 
     <TextView
         android:id="@+id/Time"
@@ -37,8 +43,8 @@
         android:layout_height="wrap_content"
         android:layout_above="@+id/Button"
         android:layout_alignParentEnd="true"
-        android:layout_marginEnd="207dp"
-        android:layout_marginBottom="123dp"
+        android:layout_marginEnd="128dp"
+        android:layout_marginBottom="119dp"
         android:text="@string/time_selected"
         android:textAllCaps="false"
         android:textSize="30sp" />
@@ -49,8 +55,8 @@
         android:layout_height="wrap_content"
         android:layout_above="@+id/Test2"
         android:layout_alignParentEnd="true"
-        android:layout_marginEnd="216dp"
-        android:layout_marginBottom="54dp"
+        android:layout_marginEnd="129dp"
+        android:layout_marginBottom="95dp"
         android:text="@string/time_picker"
         android:textAllCaps="false"
         android:textSize="30sp" />
