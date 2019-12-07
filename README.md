@@ -1,7 +1,11 @@
 ## Time_Picker
 *__This is a example app on two ways to implement a timepicker in your app using Java code.__*
 
-In android, TimePicker is a widget for selecting the time of day, in either 24-hour or AM/PM mode. 
+In android, TimePicker was introduced into the java,Lang.Object library and extends FrameLayout, as seen in the image provided below.
+
+![BACKGROUND_ATTRIBUTE](https://github.com/NicolasRojas-CENG/Time_Picker/blob/master/Images/lib.PNG?raw=true)
+
+TimePicker is a widget for selecting the time of day, in either 24-hour or AM/PM mode. 
 The displayed time consist of hours, minutes, and clock format, which can be in either 12 hour (AM/PM) or 24 hour mode.
 Android provides this functionality through TimePicker class.
 If we need to show this view as a Dialog then we have to use a TimePickerDialog class.
@@ -50,6 +54,10 @@ TimePiker also counts with some attributes for the xml file (the layout file).
 
 ![ID_ATTRIBUTE](https://github.com/NicolasRojas-CENG/Time_Picker/blob/master/Images/id.PNG?raw=true)
 
+1. __Height/Width__: all components in android studio should have a set height and width to them, it could be either 'wrap content', 'match parent', or any set amount you want (it is recomended you use dp for the measurment).
+
+![BACKGROUND_ATTRIBUTE](https://github.com/NicolasRojas-CENG/Time_Picker/blob/master/Images/h_w.PNG?raw=true)
+
 1. __timePickerMode__: this attribute is used to set the mode of the TimePicker, either for clock mode or spinner mode. The default value of the TimePicker is the clock mode, but after api level 21, you must use spinner mode.
 
 ![BACKGROUND_ATTRIBUTE](https://github.com/NicolasRojas-CENG/Time_Picker/blob/master/Images/mode.PNG?raw=true)
@@ -68,7 +76,7 @@ TimePiker also counts with some attributes for the xml file (the layout file).
 ![BACKGROUND_ATTRIBUTE](https://github.com/NicolasRojas-CENG/Time_Picker/blob/master/Images/pad.PNG?raw=true)
   
 ## Code
-Please follow the TODO comments, this will show you step by step on how to set up both the clock mode and the spinner mode of TimePicker.
+Please follow the TODO comments, this will show you step by step on how to set up both the clock mode and the spinner mode of TimePicker.  the TODO coments are devided into 1.# for the Clock mode of the TimePicker, and 2.# for the spinner mode of the TimePicker. There are supplementary coments within the code, these will help tu understand the code better.
   
 ## Refrences
 * [Tutlane](https://www.tutlane.com/tutorial/android/android-timepicker-with-examples)
