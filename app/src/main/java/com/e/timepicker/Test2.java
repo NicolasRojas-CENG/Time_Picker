@@ -16,9 +16,6 @@ public class Test2 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
-        final TextView time;
-        TimePicker TimePicker;
-
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_test2);
 
@@ -34,10 +31,10 @@ public class Test2 extends AppCompatActivity {
         });
 
         /* TODO 2.3 Now set up the TextView from 2.2 to change with the TimePicker. */
-        time = (TextView) findViewById(R.id.time);
-        TimePicker = (TimePicker) findViewById(R.id.TimePicker);
-        TimePicker.setIs24HourView(true);
-        TimePicker.setOnTimeChangedListener(new TimePicker.OnTimeChangedListener() {
+        final TextView time = findViewById(R.id.Time);
+        TimePicker timePicker = findViewById(R.id.TimePicker);
+        timePicker.setIs24HourView(true);
+        timePicker.setOnTimeChangedListener(new TimePicker.OnTimeChangedListener() {
             @Override
             //This code is for the TimePicker itself. It will set the text within the Text view
             //to show the time selected for the TimePicker.

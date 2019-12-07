@@ -7,10 +7,7 @@
     android:background="#950"
     tools:context=".Test2">
 
-    <!--TODO 2.1 This is for the Spinner mode of the TimePicker.
-    Set up the attributes of the TimePicker, review the Attributes section
-    of the README file in gethub.
-    Remember to set a meaningful id for the TimePicker. It will be used later.-->
+
 
     <!-- TODO 2.2 Then set up the TextView where the time will be shown.
     Remember to setup a meaningful id for the TextView, it will be used later.-->
@@ -44,8 +41,11 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
+    <!-- TODO 2.2 Then set up the TextView where the time will be shown.
+    Remember to setup a meaningful id for the TextView, it will be used later.-->
+
     <TextView
-        android:id="@+id/time"
+        android:id="@+id/Time"
         android:layout_width="220dp"
         android:layout_height="46dp"
         android:layout_centerHorizontal="true"
@@ -57,6 +57,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <!--TODO 2.1 This is for the Spinner mode of the TimePicker.
+    Set up the attributes of the TimePicker, review the Attributes section
+    of the README file in gethub.
+    Remember to set a meaningful id for the TimePicker. It will be used later.-->
 
     <TimePicker
         android:id="@+id/TimePicker"
@@ -70,7 +75,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/time"
+        app:layout_constraintTop_toBottomOf="@+id/Time"
         app:layout_constraintVertical_bias="0.959" />
 
     <Button
