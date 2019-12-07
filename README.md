@@ -52,6 +52,8 @@ TimePiker also counts with some attributes for the xml file (the layout file).
 
 1. __timePickerMode__: this attribute is used to set the mode of the TimePicker, either for clock mode or spinner mode. The default value of the TimePicker is the clock mode, but after api level 21, you must use spinner mode.
 
+![BACKGROUND_ATTRIBUTE](https://github.com/NicolasRojas-CENG/Time_Picker/blob/master/Images/mode.PNG?raw=true)
+
 1. __background__: this attribute is used to change the colour of the background.
 
 ![BACKGROUND_ATTRIBUTE](https://github.com/NicolasRojas-CENG/Time_Picker/blob/master/Images/bg.PNG?raw=true)
@@ -63,6 +65,8 @@ TimePiker also counts with some attributes for the xml file (the layout file).
   * __paddingBottom__: this is used to set the padding from the lower side.
   * __Padding__: this is used to set the padding for sll the sides.
   
+![BACKGROUND_ATTRIBUTE](https://github.com/NicolasRojas-CENG/Time_Picker/blob/master/Images/pad.PNG?raw=true)
+  
 ## Code
 Please follow the TODO comments, this will show you step by step on how to set up both the clock mode and the spinner mode of TimePicker.
   
@@ -71,4 +75,3 @@ Please follow the TODO comments, this will show you step by step on how to set u
 * [Abhiandroid.com](https://abhiandroid.com/ui/timepicker)
 * [Android Developer](https://developer.android.com/reference/android/widget/TimePicker)
 
-![PCB_BOTTOM](https://github.com/NicolasRojas-CENG/Time_Picker/blob/master/Images/ClockBefore.png?raw=true)
