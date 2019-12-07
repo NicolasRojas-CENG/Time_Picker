@@ -48,9 +48,13 @@ You can set the Boolean value to true for 24 hour mode or false for AM/PM mode.
 TimePiker also counts with some attributes for the xml file (the layout file).
 1. __Id__: all components/widgets in android studio should have an id to distinguish it from other components. This id will be used to set the previous mentioned methods to the required TimePicker.
 
+![ID_ATTRIBUTE](https://github.com/NicolasRojas-CENG/Time_Picker/blob/master/Images/id.png?raw=true)
+
 1. __timePickerMode__: this attribute is used to set the mode of the TimePicker, either for clock mode or spinner mode. The default value of the TimePicker is the clock mode, but after api level 21, you must use spinner mode.
 
 1. __background__: this attribute is used to change the colour of the background.
+
+![BACKGROUND_ATTRIBUTE](https://github.com/NicolasRojas-CENG/Time_Picker/blob/master/Images/bg.png?raw=true)
 
 1. __padding__: this attribute is used to set padding around the TimePicker, it is recommended to used dp as the measurment for the distance. This attribute come with four options: 
   * __paddingRight__: this is used to set the padding from the right side.
