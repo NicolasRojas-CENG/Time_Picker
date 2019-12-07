@@ -19,7 +19,7 @@
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="120dp"
         android:text="@string/this_activity_uses_a_spinner_timepiker_to_set_the_time"
         android:textAlignment="center"
         android:textAllCaps="false"
@@ -34,13 +34,13 @@
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="96dp"
         android:text="@string/time_picker_test_2"
         android:textAllCaps="false"
         android:textColor="#000"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
@@ -49,7 +49,7 @@
         android:layout_width="220dp"
         android:layout_height="46dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="96dp"
         android:text="@string/set_the_time_hh_mm"
         android:textAllCaps="false"
         android:textColor="#000"
@@ -68,10 +68,10 @@
         android:timePickerMode="spinner"
         app:layout_constraintBottom_toTopOf="@+id/Test1"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintHorizontal_bias="0.526"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/time"
-        app:layout_constraintVertical_bias="0.959" />
+        app:layout_constraintVertical_bias="0.366" />
 
     <Button
         android:id="@+id/Test1"

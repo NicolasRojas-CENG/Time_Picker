@@ -34,13 +34,13 @@
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="24dp"
         android:text="@string/time_picker_test_2"
         android:textAllCaps="false"
         android:textColor="#000"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintHorizontal_bias="0.48"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
@@ -49,13 +49,13 @@
         android:layout_width="220dp"
         android:layout_height="46dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="100dp"
+        android:layout_marginStart="148dp"
+        android:layout_marginTop="84dp"
         android:text="@string/set_the_time_hh_mm"
         android:textAllCaps="false"
         android:textColor="#000"
         android:textSize="30sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/TimePicker"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
     <TimePicker
@@ -63,15 +63,14 @@
         android:layout_width="266dp"
         android:layout_height="209dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="56dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="8dp"
         android:padding="20dp"
         android:timePickerMode="spinner"
-        app:layout_constraintBottom_toTopOf="@+id/Test1"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/time"
-        app:layout_constraintVertical_bias="0.959" />
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:layout_constraintVertical_bias="0.175" />
 
     <Button
         android:id="@+id/Test1"
@@ -79,12 +78,15 @@
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="28dp"
+        android:layout_marginBottom="16dp"
         android:text="@string/go_to_test_1"
         android:textAllCaps="false"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.929"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/time"
+        app:layout_constraintVertical_bias="1.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

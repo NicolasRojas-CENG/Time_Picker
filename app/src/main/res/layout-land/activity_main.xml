@@ -19,32 +19,29 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="48dp"
-        android:layout_marginTop="39dp"
-        android:layout_marginEnd="172dp"
-        android:layout_marginBottom="27dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="212dp"
         android:text="@string/time_picker_test_1"
         android:textAlignment="center"
         android:textAllCaps="false"
         android:textColor="#FFF"
         android:textSize="30sp"
-        app:layout_constraintBottom_toTopOf="@+id/Time"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
-        app:layout_constraintVertical_bias="0.097" />
+        app:layout_constraintEnd_toStartOf="@+id/Time"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="437dp"
         android:layout_height="130dp"
         android:layout_marginStart="137dp"
-        android:layout_marginTop="120dp"
+        android:layout_marginTop="32dp"
         android:layout_marginEnd="124dp"
         android:text="@string/this_activity_uses_a_button_to_open_a_clock_timepicker"
         android:textAllCaps="false"
         android:textColor="#FFF"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.561"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -52,39 +49,37 @@
         android:id="@+id/Time"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="216dp"
-        android:layout_marginBottom="124dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="48dp"
         android:text="@string/time_selected"
         android:textAllCaps="false"
         android:textColor="#FFF"
         android:textSize="30sp"
-        app:layout_constraintBottom_toTopOf="@+id/Button"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <Button
         android:id="@+id/Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="148dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="216dp"
         android:text="@string/time_picker"
         android:textAllCaps="false"
         android:textSize="30sp"
-        app:layout_constraintBottom_toTopOf="@+id/Test2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintEnd_toStartOf="@+id/Test2"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <Button
         android:id="@+id/Test2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="52dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="84dp"
         android:text="@string/go_to_test_2"
         android:textAllCaps="false"
         android:textSize="30sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.531"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/Time" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,15 +1,13 @@
 package com.e.timepicker;
 
-import android.app.Dialog;
-import android.app.TimePickerDialog;
 import android.os.Bundle;
-import android.text.format.DateFormat;
-
+import android.app.Dialog;
+import java.util.Calendar;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import android.app.TimePickerDialog;
+import android.text.format.DateFormat;
 import androidx.fragment.app.DialogFragment;
-
-import java.util.Calendar;
 
 /*TODO 1.4 This code handles the actual TimePicker. This code takes the time you set in the TimePicker.
 * We are using Calander to get the time we need, in this case hours and minutes.*/

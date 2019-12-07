@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity implements TimePickerDialog.
             @Override
             public void onClick(View v) {
                 DialogFragment time = new Time();
-                time.show(getSupportFragmentManager(), "time picker");
+                time.show(getSupportFragmentManager(), "Opening TimePicker.");
             }
         });
 
@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity implements TimePickerDialog.
     @Override
     public void onTimeSet(TimePicker view, int hourOfDay, int minute) {
         TextView textView = findViewById(R.id.Time);
-        textView.setText(hourOfDay + " : " + minute);
+        textView.setText(String.format("%d : %d", hourOfDay, minute));
     }
     //This is code to handle the start of the the new activity.
     public static Intent makeIntent(Context context){
