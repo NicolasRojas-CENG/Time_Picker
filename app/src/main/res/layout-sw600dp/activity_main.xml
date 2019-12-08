@@ -5,74 +5,56 @@
     android:id="@+id/relativeLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimary"
+    android:background="#B34069"
     tools:context=".MainActivity">
 
     <!--TODO 1.1 This is for the Clock mode of the TimePicker.
-        Add a TextView, were the date will be shown,
-        and a Button, to open the TimePiker
-        Be sure to use meaningful IDs for both components, they will be used
-        in the java code.-->
+           Add a TextView, were the date will be shown,
+           and the TimePicker widget.
+           Be sure to use meaningful IDs for both components, they will be used
+           in the java code.-->
 
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="48dp"
-        android:layout_marginTop="39dp"
-        android:layout_marginEnd="172dp"
-        android:layout_marginBottom="27dp"
+        android:layout_marginTop="24dp"
         android:text="@string/time_picker_test_1"
         android:textAlignment="center"
         android:textAllCaps="false"
-        android:textColor="#FFF"
         android:textSize="30sp"
-        app:layout_constraintBottom_toTopOf="@+id/Time"
+        app:layout_constraintEnd_toStartOf="@+id/Time"
+        app:layout_constraintHorizontal_bias="0.361"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/Time"
+        android:layout_width="191dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="88dp"
+        android:text="@string/time_selected"
+        android:textAllCaps="false"
+        android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
-        app:layout_constraintVertical_bias="0.097" />
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="437dp"
-        android:layout_height="130dp"
+        android:layout_width="537dp"
+        android:layout_height="83dp"
         android:layout_marginStart="137dp"
-        android:layout_marginTop="120dp"
+        android:layout_marginTop="60dp"
         android:layout_marginEnd="124dp"
         android:text="@string/this_activity_uses_a_button_to_open_a_clock_timepicker"
         android:textAllCaps="false"
-        android:textColor="#FFF"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.561"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/Time"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="216dp"
-        android:layout_marginBottom="124dp"
-        android:text="@string/time_selected"
-        android:textAllCaps="false"
-        android:textColor="#FFF"
-        android:textSize="30sp"
-        app:layout_constraintBottom_toTopOf="@+id/Button"
-        app:layout_constraintEnd_toEndOf="parent" />
-
-    <Button
-        android:id="@+id/Button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="148dp"
-        android:text="@string/time_picker"
-        android:textAllCaps="false"
-        android:textSize="30sp"
-        app:layout_constraintBottom_toTopOf="@+id/Test2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
-        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/Test2"
@@ -84,7 +66,25 @@
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.531"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TimePicker"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TimePicker
+        android:id="@+id/TimePicker"
+        android:layout_width="351dp"
+        android:layout_height="404dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="112dp"
+        android:background="#8FFF98"
+        android:headerBackground="#52B35A"
+        android:numbersBackgroundColor="#FF8FB6"
+        android:numbersSelectorColor="#8FFF98"
+        android:padding="20dp"
+        android:timePickerMode="clock"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Time" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

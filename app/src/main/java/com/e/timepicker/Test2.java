@@ -33,7 +33,7 @@ public class Test2 extends AppCompatActivity {
         /* TODO 2.3 Now set up the TextView from 2.2 to change with the TimePicker. */
         final TextView time = findViewById(R.id.Time);
         TimePicker timePicker = findViewById(R.id.TimePicker);
-        timePicker.setIs24HourView(true);
+        timePicker.setIs24HourView(false);
         timePicker.setOnTimeChangedListener(new TimePicker.OnTimeChangedListener() {
             @Override
             //This code is for the TimePicker itself. It will set the text within the Text view

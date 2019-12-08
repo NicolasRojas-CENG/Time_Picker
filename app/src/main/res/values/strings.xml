@@ -7,7 +7,7 @@
     <string name="go_to_test_1">Go to Test 1</string>
     <string name="time_is">Time Is ::</string>
     <string name="set_the_time_hh_mm">Set the Time HH:MM</string>
-    <string name="this_activity_uses_a_button_to_open_a_clock_timepicker">This activity uses a button to open a clock TimePicker.</string>
+    <string name="this_activity_uses_a_button_to_open_a_clock_timepicker">This activity uses a clock TimePicker to set the time.</string>
     <string name="time_picker_test_2">Time Picker Test 2</string>
-    <string name="this_activity_uses_a_spinner_timepiker_to_set_the_time">This activity uses a spinner TimePiker to set the time.</string>
+    <string name="this_activity_uses_a_spinner_timepiker_to_set_the_time">This activity uses a spinner TimePicker to set the time.</string>
 </resources>

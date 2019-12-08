@@ -1,8 +1,6 @@
 package com.e.timepicker;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.DialogFragment;
-
 import android.app.TimePickerDialog;
 import android.content.Context;
 import android.content.Intent;
@@ -11,7 +9,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.TimePicker;
-import android.widget.Toolbar;
 
 public class MainActivity extends AppCompatActivity implements TimePickerDialog.OnTimeSetListener {
 
@@ -19,17 +16,6 @@ public class MainActivity extends AppCompatActivity implements TimePickerDialog.
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        /*TODO 1.2 This is the set up for the button that opens the TimePicker.
-        * Use the IDs set up in the Layout file from 1.1*/
-        Button button = findViewById(R.id.Button);
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                DialogFragment time = new Time();
-                time.show(getSupportFragmentManager(), "Opening TimePicker.");
-            }
-        });
 
         //this is the set up to go to the next activity, where the sinner mode can be found.
         Button test2Button = findViewById(R.id.Test2);
@@ -42,9 +28,24 @@ public class MainActivity extends AppCompatActivity implements TimePickerDialog.
             }
         });
 
+        /*TODO 1.2 This is the set up for the TextView and the TimePicker
+         * Use the IDs set up in the Layout file from 1.1*/
+
+        final TextView time = findViewById(R.id.Time);
+        TimePicker timePicker = findViewById(R.id.TimePicker);
+        //This is to set a 24 hour clock, this means midnight is 00:00, and noon is 12:00
+        timePicker.setIs24HourView(true);
+        timePicker.setOnTimeChangedListener(new TimePicker.OnTimeChangedListener() {
+            @Override
+            //This code is for the TimePicker itself. It will set the text within the Text view
+            //to show the time selected for the TimePicker.
+            public void onTimeChanged(TimePicker view, int hourOfDay, int minute) {
+                // display a toast with changed values of time picker
+                time.setText(String.format("%d : %d", hourOfDay, minute)); // set the current time in text view
+            }
+        });
+
     }
-    /*TODO 1.3 This code is set the time you choose to the TextView mentioned in the layout file.
-    * Be sure you are using the correct ID for the TextView.*/
     @Override
     public void onTimeSet(TimePicker view, int hourOfDay, int minute) {
         TextView textView = findViewById(R.id.Time);
