@@ -6,6 +6,7 @@
 * [TimePicker Methods](#TimePickerMethods)
 * [TimePicker XML Attributes](#TimePickerXMLAttributes)
 * [Code](#Code)
+*[Code Output](#CodeOutput)
 * [References](#References)
 
 ## <a name="TimePickerIntroduction"> TimePicker Introduction </a>
@@ -175,6 +176,8 @@ __MainActivity.java__ Add the code so the time can be passed from the TimePicker
 ```
 
 This is for the clock mode of the TimePicker, if you want to use the spinner mode, just change the __android:timePickerMode="clock"__ to spinner, the rest can stay the same.
+
+## <a name="CodeOutput"> Code Output </a>
   
 ## <a name="References"> References </a>
 * [Tutlane](https://www.tutlane.com/tutorial/android/android-timepicker-with-examples)
