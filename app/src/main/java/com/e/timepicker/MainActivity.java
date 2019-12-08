@@ -1,7 +1,6 @@
 package com.e.timepicker;
 
 import androidx.appcompat.app.AppCompatActivity;
-import android.app.TimePickerDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,7 +9,7 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.TimePicker;
 
-public class MainActivity extends AppCompatActivity implements TimePickerDialog.OnTimeSetListener {
+public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,11 +45,7 @@ public class MainActivity extends AppCompatActivity implements TimePickerDialog.
         });
 
     }
-    @Override
-    public void onTimeSet(TimePicker view, int hourOfDay, int minute) {
-        TextView textView = findViewById(R.id.Time);
-        textView.setText(String.format("%d : %d", hourOfDay, minute));
-    }
+
     //This is code to handle the start of the the new activity.
     public static Intent makeIntent(Context context){
         return new Intent(context, MainActivity.class);
