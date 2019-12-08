@@ -76,7 +76,7 @@ TimePiker also counts with some attributes for the xml file (the layout file).
 ![BACKGROUND_ATTRIBUTE](https://github.com/NicolasRojas-CENG/Time_Picker/blob/master/Images/pad.PNG?raw=true)
   
 ## Code
-Please follow the TODO comments, this will show you step by step on how to set up both the clock mode and the spinner mode of TimePicker.  the TODO coments are devided into 1.# for the Clock mode of the TimePicker, and 2.# for the spinner mode of the TimePicker. There are supplementary coments within the code, these will help tu understand the code better.
+Please follow the TODO comments, this will show you step by step on how to set up both the clock mode and the spinner mode of TimePicker.  the TODO coments are devided into 1.# for the Clock mode of the TimePicker, and 2.# for the spinner mode of the TimePicker. There are supplementary coments within the code, these will help tu understand the code better. This example will be using the __setIs24HourView__ and __setOnTimeChangedListener__ methods for the TimPicker, along with the Calander class to get the time we need.
   
 ## Refrences
 * [Tutlane](https://www.tutlane.com/tutorial/android/android-timepicker-with-examples)
