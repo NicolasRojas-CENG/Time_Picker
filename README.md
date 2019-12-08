@@ -1,5 +1,5 @@
 ## Time_Picker
-*__This is a example app on two ways to implement a timepicker in your app using Java code.__*
+*__This is a very simple example app on two ways to implement a timepicker in your app using Java code. This is intended to get you started with the basic setup for the Time Picker widget.__*
 
 In android, TimePicker was introduced into the java,Lang.Object library and extends FrameLayout, as seen in the image provided below.
 
@@ -76,10 +76,100 @@ TimePiker also counts with some attributes for the xml file (the layout file).
 ![BACKGROUND_ATTRIBUTE](https://github.com/NicolasRojas-CENG/Time_Picker/blob/master/Images/pad.PNG?raw=true)
   
 ## Code
-Please follow the TODO comments, this will show you step by step on how to set up both the clock mode and the spinner mode of TimePicker.  the TODO coments are devided into 1.# for the Clock mode of the TimePicker, and 2.# for the spinner mode of the TimePicker. There are supplementary coments within the code, these will help tu understand the code better. This example will be using the __setIs24HourView__ and __setOnTimeChangedListener__ methods for the TimPicker, along with the Calander class to get the time we need.
+Please follow the TODO comments, this will show you step by step on how to set up both the clock mode and the spinner mode of TimePicker. The TODO coments are devided into 1.# for the Clock mode of the TimePicker, and 2.# for the spinner mode of the TimePicker. There are supplementary coments within the code, these will help tu understand the code better. This example will be using the __setIs24HourView__ and __setOnTimeChangedListener__ methods for the TimPicker, along with the Calander class to get the time we need.
+
+These code snippings are for your refrence.
+
+__Step one:__ Add the TimePicker widget to the layoutfile.
+
+__activity_main.xml__
+
+```
+<TimePicker
+        android:id="@+id/TimePicker"
+        android:layout_width="284dp"
+        android:layout_height="380dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="184dp"
+        android:background="#52B35A"
+        android:headerBackground="#8FFF98"
+        android:numbersBackgroundColor="#FF8FB6"
+        android:numbersSelectorColor="#8FFF98"
+        android:padding="20dp"
+        android:timePickerMode="clock"
+        app:layout_constraintBottom_toTopOf="@+id/Test2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Time"
+        app:layout_constraintVertical_bias="1.0" />
+```
+
+__Step two:__ Add the TextView to show the time, other than the TimePicker itself. This is to show that you can pass the time information to other activities. 
+
+__activity_main.xml__
+
+```
+<TextView
+        android:id="@+id/Time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="108dp"
+        android:text="@string/time_selected"
+        android:textAllCaps="false"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.982"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+```
+__Step three:__
+
+__MainActivity.java__ Add the code so the time can be passed from the TimePicker to the TextView. Careful with the IDs, use the same ones from the .xml file
+
+```
+@Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        //this is the set up to go to the next activity, where the sinner mode can be found.
+        Button test2Button = findViewById(R.id.Test2);
+        test2Button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent THScreenIntent = Test2.makeIntent(MainActivity.this);
+                startActivity(THScreenIntent);
+                finish();
+            }
+        });
+
+        /*TODO 1.2 This is the set up for the TextView and the TimePicker
+         * Use the IDs set up in the Layout file from 1.1*/
+
+        final TextView time = findViewById(R.id.Time);
+        TimePicker timePicker = findViewById(R.id.TimePicker);
+        //This is to set a 24 hour clock, this means midnight is 00:00, and noon is 12:00
+        timePicker.setIs24HourView(true);
+        timePicker.setOnTimeChangedListener(new TimePicker.OnTimeChangedListener() {
+            @Override
+            //This code is for the TimePicker itself. It will set the text within the Text view
+            //to show the time selected for the TimePicker.
+            public void onTimeChanged(TimePicker view, int hourOfDay, int minute) {
+                // display a toast with changed values of time picker
+                time.setText(String.format("%d : %d", hourOfDay, minute)); // set the current time in text view
+            }
+        });
+
+    }
+```
+
+This is for the clock mode of the TimePicker, if you want to use the spinner mode, just change the __android:timePickerMode="clock"__ to spinner, the rest can stay the same.
   
 ## Refrences
 * [Tutlane](https://www.tutlane.com/tutorial/android/android-timepicker-with-examples)
 * [Abhiandroid.com](https://abhiandroid.com/ui/timepicker)
 * [Android Developer](https://developer.android.com/reference/android/widget/TimePicker)
+* [Coding in Flow](https://www.youtube.com/watch?v=QMwaNN_aM3U)
 
