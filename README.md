@@ -1,6 +1,15 @@
 ## Time_Picker
 *__This is a very simple example app on two ways to implement a timepicker in your app using Java code. This is intended to get you started with the basic setup for the Time Picker widget.__*
 
+## Table of Contents
+* [TimePicker Introduction](#TimePickerIntroduction)
+* [TimePicker Methods](#TimePickerMethods)
+* [TimePicker XML Attributes](#TimePickerXMLAttributes)
+* [Code](#Code)
+* [References](#References)
+
+## <a name="TimePickerIntroduction"> TimePicker Introduction </a>
+
 In android, TimePicker was introduced into the java,Lang.Object library and extends FrameLayout, as seen in the image provided below.
 
 ![BACKGROUND_ATTRIBUTE](https://github.com/NicolasRojas-CENG/Time_Picker/blob/master/Images/lib.PNG?raw=true)
@@ -14,7 +23,7 @@ if your app supports versions of Android older than 3.0,even as low as Android 1
 available in the support library for backward compatibility.
 This widget can be set in both clock mode or spinner mode. This example app will show both off.
 
-## TimePicker Methods
+## <a name="TimePickerMethods"> TimePicker Methods </a>
 
 The following are a list of some common methods of a time picker; these can be used to configure a time picker in an app.
 
@@ -47,7 +56,7 @@ You can set the Boolean value to true for 24 hour mode or false for AM/PM mode.
 
 1. The __setOnTimeChange__, this method takes (TimePickerOnTimeChangedListener onTimeChangedListener. This method is used to set the call back, which indicates that the user has made a change to the time. This method counts with an override function onTimeChange(TimePicker view, int hourOfDay, int munute). the first parameter is for the timePicker, the second parameter is for getting the hour of the day after a cjange has been made, and the third paramater id for getting the minute after a change has been made.
 
-## XML Attributes
+## <a name="TimePickerXMLAttributes"> TimePicker XML Attributes </a>
 
 TimePiker also counts with some attributes for the xml file (the layout file).
 1. __Id__: all components/widgets in android studio should have an id to distinguish it from other components. This id will be used to set the previous mentioned methods to the required TimePicker.
@@ -75,7 +84,7 @@ TimePiker also counts with some attributes for the xml file (the layout file).
   
 ![BACKGROUND_ATTRIBUTE](https://github.com/NicolasRojas-CENG/Time_Picker/blob/master/Images/pad.PNG?raw=true)
   
-## Code
+## <a name="Code"> Code </a>
 Please follow the TODO comments, this will show you step by step on how to set up both the clock mode and the spinner mode of TimePicker. The TODO coments are devided into 1.# for the Clock mode of the TimePicker, and 2.# for the spinner mode of the TimePicker. There are supplementary coments within the code, these will help tu understand the code better. This example will be using the __setIs24HourView__ and __setOnTimeChangedListener__ methods for the TimPicker, along with the Calander class to get the time we need.
 
 These code snippings are for your refrence.
@@ -167,7 +176,7 @@ __MainActivity.java__ Add the code so the time can be passed from the TimePicker
 
 This is for the clock mode of the TimePicker, if you want to use the spinner mode, just change the __android:timePickerMode="clock"__ to spinner, the rest can stay the same.
   
-## Refrences
+## <a name="References"> References </a>
 * [Tutlane](https://www.tutlane.com/tutorial/android/android-timepicker-with-examples)
 * [Abhiandroid.com](https://abhiandroid.com/ui/timepicker)
 * [Android Developer](https://developer.android.com/reference/android/widget/TimePicker)
